@@ -1,13 +1,21 @@
 <template>
   <div>
     <button @click="printDownload">Print Download</button>
-    <Download v-show="false" ref="DownloadComp" />
+    <Download v-show="false" ref="DownloadComp" :values="values"/>
   </div>
 </template>
 
 <script>
   import Download from './components/Download'
   export default {
+    data() {
+      return {
+        values: {
+          name: 'Abhishek', 
+          age: 26
+        }
+      }
+    },
     components: {
       Download,
     },

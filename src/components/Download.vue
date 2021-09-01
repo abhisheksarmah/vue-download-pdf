@@ -2,7 +2,7 @@
   <div>
     <div id="print">
       This file includes a set of instructions to finish this process
-      something more is hree
+      something more is hree {{values.name}} {{values.age}}
     </div>
     <div class="badge bg-primary">the green text</div>
     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 376.277 376.277" style="enable-background:new 0 0 376.277 376.277;" xml:space="preserve" width="512" height="512">
@@ -21,4 +21,10 @@
     </svg>
   </div>
 </template>
+
+<script>
+export default {
+  props: ['values']
+}
+</script>
 
